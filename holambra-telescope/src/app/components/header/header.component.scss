@@ -1,14 +1,17 @@
 header {
+  position: relative;
   background-image: url("../header/img/background.svg");
   top: 0px;
   left: 0px;
   width: 1920px;
   height: 732px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.logo {
-  top: 32px;
-  left: 405px;
-  width: 334px;
-  height: 70px;
+.left-conteiner {
+  display: grid;
+  color: var(--white);
 }
