@@ -1,3 +1,15 @@
-* {
-    background-color: var(--blue);
+footer {
+  display: grid;
+  grid-template-columns: 2;
+  grid-row: 2;
+  background-color: var(--blue);
+  color: var(--white);
+  top: 3206px;
+  left: 0px;
+  width: 1920px;
+  height: 127px;
+}
+
+.end-text {
+  opacity: 0.5;
 }
