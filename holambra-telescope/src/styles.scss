@@ -1,6 +1,8 @@
-@import url(https://db.onlinewebfonts.com/c/41a37b5ce5c3e0b6200b09e4f6e8b5e5?family=Gibson);
+/* Importar a fonte externa */
+@import url('https://db.onlinewebfonts.com/c/41a37b5ce5c3e0b6200b09e4f6e8b5e5?family=Gibson');
 
 :root {
+    /* Definição das variáveis de cor */
     --white: #ffffff;
     --blue: #003262;
     --green1: #42c0b6;
@@ -9,9 +11,29 @@
     --grey1: #e7ecf2;
     --grey2: #cbcbcb;
     --red: #ff4d4f;
-    --grey3: #9BAFC6
-  }
-  
-  * {
-      font-family: 'Gibson';
-  }
+    --grey3: #9BAFC6;
+}
+
+/* Aplicar a fonte a todos os elementos */
+body {
+    font-family: 'Gibson', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos básicos para a imagem */
+img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilos para diferentes tamanhos de tela */
+/* Por exemplo, para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    /* Adicione aqui os estilos específicos para telas menores */
+}
+
+/* Por exemplo, para telas maiores que 1200px */
+@media screen and (min-width: 1200px) {
+    /* Adicione aqui os estilos específicos para telas maiores */
+}
