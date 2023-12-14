@@ -1,3 +1,25 @@
 body {
-    display: flex;
+  background-color: var(--white);
+  display: flex;
+  width: 100vh;
+  align-items: center;
+  text-align: center;
+  color: var(--blue);
+}
+
+.desafios {
+  display: grid;
+  grid-template-rows: auto auto; 
+  grid-template-columns: auto auto; 
+  gap: 10px;
+}
+
+img {
+  top: 964px;
+  left: 405px;
+  width: 90px;
+  height: 90px;
+  background: transparent url("img/ico_desafio1.png") 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
 }
