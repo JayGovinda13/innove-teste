@@ -1,17 +1,97 @@
 header {
-  position: relative;
   background-image: url("../header/img/background.svg");
+  background-repeat: no-repeat;
   top: 0px;
-  left: 0px;
-  width: 1920px;
   height: 732px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  width: 1920px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
 }
 
-.left-conteiner {
-  display: grid;
+.header {
+  padding-left: 30%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  width: 1110px;
+  height: 70px;
+  align-items: center;
+  margin: 0 auto; /* Adicione margem automática para centralizar horizontalmente */
+  top: 0; /* Posiciona no topo */
+  left: 50%; /* Ajuste para posicionar horizontalmente no centro */
+  transform: translateX(-50%); /* Centraliza horizontalmente o header */
+}
+
+a {
+  top: 60px;
+  left: 1191px;
+  width: 98px;
+  height: 14px;
   color: var(--white);
+  text-align: center;
+  font: normal normal medium 14px/20px Gibson;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.text {
+  display: grid;
+  padding-left: 50%;
+  display: grid;
+}
+
+h2 {
+  top: 266px;
+  left: 405px;
+  width: 540px;
+  height: 88px;
+  color: var(--unnamed-color-42c0b6);
+  text-align: left;
+  font: normal normal bold 40px/48px Gibson;
+  letter-spacing: 0px;
+  color: #42c0b6;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+p {
+  top: 386px;
+  left: 405px;
+  width: 540px;
+  height: 56px;
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  font: normal normal 300 24px/32px Gibson;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+button {
+  top: 490px;
+  left: 437px;
+  width: 118px;
+  height: 20px;
+  color: var(--blue);
+  text-align: center;
+  font: normal normal medium 20px/24px Gibson;
+  letter-spacing: 0px;
+  color: #003262;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.right-conteiner {
+  top: 220px;
+  left: 1035px;
+  width: 420px;
+  height: 352px;
+  background: transparent url("./img/logo_visibilidade.svg") 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
+  justify-content: end;
 }
