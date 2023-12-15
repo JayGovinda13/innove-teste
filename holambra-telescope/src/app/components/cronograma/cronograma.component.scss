@@ -1,3 +1,26 @@
 * {
-    background-color: var(--blue);
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: var(--green1);
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.box {
+  border: 2px solid var(--green2);
+  display: flex;
+  width: 255px;
+  height: 162px;
+  border: 2px solid (--green2);
+  opacity: 1;
+  align-items: start;
+  color: var(--white);
 }
