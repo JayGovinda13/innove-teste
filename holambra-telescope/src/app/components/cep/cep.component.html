@@ -1,1 +1,30 @@
-<p>cep works!</p>
+<div>
+    <form #f="ngForm" method="get" action=".">
+        <div>
+            <input placeholder="Nome" type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+            <input placeholder="Sobrenome" type="text" id="sobrenome" name="sobrenome" required>
+        </div>
+        <div>
+            <input placeholder="Email" type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <input placeholder="Telefone" type="tel" id="telefone" name="telefone" required>
+        </div>
+        <div>
+            <input placeholder="CEP" type="string" id="cep" name="cep" onblur="pesquisacep(this.value)" value=""
+                required>
+        </div>
+        <div>
+            <input placeholder="Endereço" type="text" id="endereço" name="endereço" required>
+        </div>
+        <div>
+            <input placeholder="Cidade" type="text" id="cidade" name="cidade" required>
+        </div>
+        <div>
+            <input placeholder="Estado" type="text" id="estado" name="estado" required>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</div>

@@ -8,8 +8,12 @@ import { Injectable } from '@angular/core';
 export class CepServiceService {
 
   constructor(private httpCliente: HttpClient) { }
+
+  buscar(cep:String){
+    return this.httpCliente.get(`https://viacep.com.br/ws/${cep}/json/`)
+  }
 }
 
-export function buscar(cep: any, String: StringConstructor) {
+export function buscar(cep: String, String: StringConstructor) {
   throw new Error('Function not implemented.');
 }
